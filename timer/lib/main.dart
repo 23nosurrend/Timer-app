@@ -6,7 +6,7 @@ import 'package:timer/pages/choose_location.dart';
 void main() => runApp(MaterialApp(
   initialRoute: '/',
   routes:{
-    '/':(context)=>Loading(),
+    '/':(context)=>const Loading(),
     '/home':(context)=> const Home(),
     '/location':(context)=> const ChooseLocation(),
   }

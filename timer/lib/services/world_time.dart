@@ -26,7 +26,7 @@ class WorldTime {
       String datetime = data['datetime'];
       String offset = data['utc_offset'].substring(2, 3);
       // print(datetime);
-      print(offset);
+   
       //craete DateTime
       DateTime now = DateTime.parse(datetime);
 
@@ -35,7 +35,7 @@ class WorldTime {
       isDayTime = now.hour > 6 && now.hour < 20 ? true : false;
       time = DateFormat.jm().format(now);
     } catch (e) {
-      print('error caught:$e');
+     
       time = 'Could not get time ';
     }
   }
